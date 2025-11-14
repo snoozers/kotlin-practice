@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/testdb
+    username: test
+    password: test
+
+logging:
+  level:
+    root: WARN
+    com.example.todoapi: DEBUG
+    org.testcontainers: INFO

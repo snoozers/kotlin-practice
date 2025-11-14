@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://postgres:5432/tododb}
+    username: ${SPRING_DATASOURCE_USERNAME:todouser}
+    password: ${SPRING_DATASOURCE_PASSWORD:todopass}
+
+logging:
+  level:
+    root: INFO
+    com.example.todoapi: INFO

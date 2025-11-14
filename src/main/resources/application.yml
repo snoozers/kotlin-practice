@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: todo-api
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/tododb
+    username: todouser
+    password: todopass
+    driver-class-name: org.postgresql.Driver
+
+  jackson:
+    property-naming-strategy: SNAKE_CASE
+    serialization:
+      write-dates-as-timestamps: false
+    time-zone: Asia/Tokyo
+
+logging:
+  level:
+    root: INFO
+    com.example.todoapi: DEBUG
+    org.seasar.doma: DEBUG
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+
+server:
+  port: 8080
+  error:
+    include-message: always
+    include-binding-errors: always

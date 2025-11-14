@@ -1,0 +1,13 @@
+# AWS Configuration
+aws_region = "ap-northeast-1"
+
+# Project Configuration
+project_name = "kotlin-todo-api"
+environment  = "dev"
+
+# Security - IMPORTANT: Change this to your IP address
+allowed_ssh_cidr = "0.0.0.0/0"  # Change to your IP, e.g., "203.0.113.0/32"
+
+# EC2 Configuration
+ec2_instance_type = "t3.medium"
+ec2_key_name      = "your-key-name"  # Change this to your EC2 key pair name
